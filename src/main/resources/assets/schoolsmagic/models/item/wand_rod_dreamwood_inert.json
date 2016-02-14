@@ -1,0 +1,6 @@
+{
+  "parent": "schoolsmagic:item/base_item",
+  "textures": {
+    "layer0": "schoolsmagic:items/wand_rod_dreamwood_inert"
+  }
+}

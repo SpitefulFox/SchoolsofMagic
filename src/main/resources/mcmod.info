@@ -1,0 +1,16 @@
+[
+{
+  "modid": "SchoolsMagic",
+  "name": "Schools of Magic",
+  "description": "A mod for interdisciplinary magical studies.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["SpitefulFox"],
+  "credits": "Glassmaker, Azanor, WayofTime, Vazkii, Othlon",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

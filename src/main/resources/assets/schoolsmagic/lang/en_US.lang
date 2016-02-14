@@ -1,0 +1,39 @@
+#
+# Items
+
+#
+# Wand components
+item.Wand.blood.rod=Blood
+item.Wand.witchwood.rod=Witchwood
+item.Wand.livingwood.rod=Livingwood
+item.Wand.dreamwood.rod=Dreamwood
+item.Wand.aeternalis.rod=Aeternalis
+item.Wand.manasteel.cap=Manasteel Entwined
+item.Wand.elementium.cap=Elementium Kissed
+item.school_wand.blood.name=Blood Rod
+item.school_wand.blood_inert.name=Inert Blood Rod
+item.school_wand.livingwood.name=Livingwood Rod
+item.school_wand.livingwood_inert.name=Dormant Livingwood Rod
+item.school_wand.blood_staff.name=Blood Staff Core
+item.school_wand.witchwood_staff.name=Witchwood Staff Core
+item.school_wand.dreamwood.name=Dreamwood Rod
+item.school_wand.dreamwood_inert.name=Silent Dreamwood Rod
+item.school_wand.dreamwood_staff.name=Dreamwood Staff Core
+item.school_wand.aeternalis.name=Aeternalis Rod
+#
+# Blocks
+
+#
+# Misc
+itemGroup.schoolsmagic=Schools of Magic
+tc.research_category.MIXED=Apocrypha
+death.attack.blooderp=%1$s was bled dry
+#
+# Research
+schools.research_name.NETHERSHARDS=Nether Shards
+schools.research_text.NETHERSHARDS=Aim to misbehave.
+schools.research_page.NETHERSHARDS.1=Strange energies swirl through the Nether. On occasion, they have been known to solidify into crystal shards when certain sympathetic events occur.
+schools.research_page.NETHERSHARDS.2=These crystals are imbued with different vices and have many uses for more unscrupulous Thaumaturges.<BR>There are seven documented types of nether shard, each attuned to a different "deadly sin."<BR><BR><IMG>forbidden:textures/misc/research.png:0:0:111:16:1</IMG><BR>
+schools.research_page.NETHERSHARDS.2b=These crystals are imbued with different vices and have many uses for more unscrupulous Thaumaturges.<BR>There are six documented types of nether shard, each attuned to a different "deadly sin."<BR><BR><IMG>forbidden:textures/misc/research.png:0:16:95:16:1</IMG><BR>
+schools.research_page.NETHERSHARDS.3=Wrath Shards crystallize around acts of violence. The more excessive the physical force used, the more likely it is for a Wrath Shard to appear.<BR><BR>Sloth Shards congeal when proxies and accidents are used to collect resources without effort.<BR><BR>Envy Shards are taken from those who have them by those that covet them.<BR><BR>Pride Shards materialize when a creature of truly great power is cut down to size.<BR><BR>Gluttony Shards crystallize when someone feasts.<BR><BR>Greed Shards appear when enchantment is used to turn a profit.
+#

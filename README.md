@@ -1,0 +1,2 @@
+# SchoolsofMagic
+A magic mod?

@@ -37,8 +37,6 @@ public class ItemWandCores extends Item {
             list.add(new ItemStack(this, 1, x));
         }
         list.add(getWand(Thaumaturgy.WAND_ROD_AETERNALIS, WandCap.caps.get("thaumium")));
-        list.add(getWand(Thaumaturgy.WAND_ROD_BLOOD, WandCap.caps.get("thaumium")));
-        list.add(getWand(Thaumaturgy.STAFF_ROD_BLOOD, WandCap.caps.get("thaumium")));
         list.add(getWand(Thaumaturgy.WAND_ROD_LIVINGWOOD, WandCap.caps.get("thaumium")));
         list.add(getWand(Thaumaturgy.WAND_ROD_DREAMWOOD, WandCap.caps.get("thaumium")));
     }

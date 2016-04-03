@@ -1,6 +1,7 @@
 package fox.spiteful.schoolsmagic;
 
 import fox.spiteful.schoolsmagic.items.ModItems;
+import fox.spiteful.schoolsmagic.psionics.Psionics;
 import fox.spiteful.schoolsmagic.thaumaturgy.Thaumaturgy;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.fml.common.Mod;
@@ -30,6 +31,8 @@ public class Magic {
         ModItems.curriculum();
         if(Config.thaumaturgy)
             Thaumaturgy.miracles();
+        if(Config.psi)
+            Psionics.oneechan();
 
         proxy.stupidJsonBullshit();
     }

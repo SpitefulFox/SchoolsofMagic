@@ -17,8 +17,8 @@ public class PieceTrickDeathGaze extends PieceTrickPotionBase {
         return PotionDeathGaze.instance;
     }
 
-    @Override
+    /*@Override
     public int getPotency(int power, int time) throws SpellCompilationException {
         return (int)multiplySafe(super.getPotency(power, time), 4);
-    }
+    }*/
 }

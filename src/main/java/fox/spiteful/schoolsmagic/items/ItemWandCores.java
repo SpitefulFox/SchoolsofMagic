@@ -1,5 +1,6 @@
 package fox.spiteful.schoolsmagic.items;
 
+import fox.spiteful.schoolsmagic.Magic;
 import fox.spiteful.schoolsmagic.thaumaturgy.Thaumaturgy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
@@ -23,6 +24,7 @@ public class ItemWandCores extends Item {
         setHasSubtypes(true);
         setUnlocalizedName("school_wand");
         setMaxDamage(0);
+        setCreativeTab(Magic.tab);
     }
 
     @Override

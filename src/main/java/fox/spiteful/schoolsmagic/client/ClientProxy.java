@@ -18,6 +18,8 @@ public class ClientProxy extends Proxy {
                 setCustomModelResourceLocation(ModItems.cores, x, new ModelResourceLocation("schoolsmagic:wand_rod_" + ItemWandCores.types[x], "inventory"));
             }
         }
+        setCustomModelResourceLocation(ModItems.colorizer, 0, new ModelResourceLocation("schoolsmagic:thaumic_colorizer"));
+        setCustomModelResourceLocation(ModItems.amuletMentalAgony, 0, new ModelResourceLocation("schoolsmagic:amuletMentalAgony"));
     }
 
     public void setCustomModelResourceLocation(Item item, int meta, ModelResourceLocation model){

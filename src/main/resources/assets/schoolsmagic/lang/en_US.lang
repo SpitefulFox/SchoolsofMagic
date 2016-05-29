@@ -1,7 +1,8 @@
 #
 # Items
 item.cadColorizerThaumic.name=Thaumic CAD Colorizer
-item.amuletMentalAgony.name=Amulet of Mental Agony
+item.cadColorizerFlame.name=Incendiary CAD Colorizer
+item.amuletMentalAgony.name=Amulet of Mental Anguish
 #
 # Wand components
 item.Wand.livingwood.rod=Livingwood
@@ -37,6 +38,6 @@ psi.piecegroup.thaumic=Thaumaturgy
 psi.piecegroup.thaumic.desc=With a bit of improvisation, your CAD appears to be capable of reproducing various phenomenon and effects normally associated with more archaic schools of magic such as Thaumaturgy.
 #
 # Research
-schools.research_name.AMULETPSI=Amulet of Mental Agony
+schools.research_name.AMULETPSI=Amulet of Mental Anguish
 schools.research_text.AMULETPSI=Better than your sister!
 schools.research_page.AMULETPSI.1=CADs are very versatile, but sometimes dangerous. A spellcaster who isn't careful can end up blowing their own brains out from overflowing Psionic Energy. However, you've discovered that Void Metal is uniquely attuned to your mental pain in such situations.<BR><BR>The Amulet of Mental Anguish will protect you from most psionic energy overflow at the cost of its durability. The protection isn't entirely perfect, so suffering multiple surges in quick succession can still kill you.<BR><BR>Protecting your mind with eldritch materials is a good idea, right?

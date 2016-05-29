@@ -16,6 +16,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import thaumcraft.api.items.IRepairable;
 import thaumcraft.api.items.IWarpingGear;
 import vazkii.botania.api.item.ICosmeticAttachable;
 import vazkii.psi.common.core.handler.PlayerDataHandler;
@@ -23,7 +24,7 @@ import vazkii.psi.common.core.handler.PlayerDataHandler;
 import java.util.List;
 
 @Optional.Interface(iface = "vazkii.botania.api.item.ICosmeticAttachable", modid = "Botania")
-public class ItemAmuletPsi extends Item implements IBauble, IWarpingGear, ICosmeticAttachable {
+public class ItemAmuletPsi extends Item implements IBauble, IRepairable, IWarpingGear, ICosmeticAttachable {
 
     public ItemAmuletPsi(){
         super();

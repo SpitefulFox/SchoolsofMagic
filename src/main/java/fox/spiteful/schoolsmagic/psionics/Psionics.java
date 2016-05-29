@@ -22,8 +22,15 @@ import vazkii.psi.api.spell.PieceGroup;
 public class Psionics {
 
     public static void oneechan(){
-        if(Config.thaumaturgy){
-            try {
+
+        try {
+
+            Item psiResource = Magic.getItem("psi", "material");
+            CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(ModItems.colorizer, 1, 1), " P ", "GBG", " I ",
+                    'P', new ItemStack(psiResource, 1, 0),
+                    'B', new ItemStack(Items.blaze_powder), 'G', "blockGlass", 'I', new ItemStack(Items.iron_ingot)));
+
+            if(Config.thaumaturgy) {
                 try {
                     PsiAPI.registerSpellPieceAndTexture("trickWarpWard", PieceTrickWarpWard.class);
                     PsiAPI.registerSpellPieceAndTexture("trickDeathGaze", PieceTrickDeathGaze.class);
@@ -33,15 +40,16 @@ public class Psionics {
                     PsiAPI.addPieceToGroup(PieceTrickDeathGaze.class, "thaumic", false);
                     PsiAPI.addPieceToGroup(PieceTrickFluxPhage.class, "thaumic", false);
 
-                    CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(ModItems.colorizer, 1, 0), " S ", "GSG", " I ",
+                    CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(ModItems.colorizer, 1, 0), " P ", "GSG", " I ",
+                            'P', new ItemStack(psiResource, 1, 0),
                             'S', new ItemStack(ItemsTC.salisMundus), 'G', "blockGlass", 'I', new ItemStack(Items.iron_ingot)));
 
                 } catch (Throwable e) {
                     Lumberjack.log(Level.INFO, e, "Schools of Magic was just a weed.");
                 }
-            } catch (Throwable e) {
-                Lumberjack.log(Level.INFO, e, "Schools of Magic was just a weed.");
             }
+        } catch (Throwable e) {
+            Lumberjack.log(Level.INFO, e, "Schools of Magic was just a weed.");
         }
     }
 

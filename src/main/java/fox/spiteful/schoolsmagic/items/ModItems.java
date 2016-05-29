@@ -18,9 +18,10 @@ public class ModItems {
         }
 
         if(Config.psi){
+            colorizer = new ItemExtraColorizer();
+            GameRegistry.registerItem(colorizer, "Colorizer");
+
             if(Config.thaumaturgy){
-                colorizer = new ItemThaumicColorizer();
-                GameRegistry.registerItem(colorizer, "ThaumicColorizer");
                 amuletMentalAgony = new ItemAmuletPsi();
                 GameRegistry.registerItem(amuletMentalAgony, "AmuletMentalAgony");
             }

@@ -16,8 +16,11 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
 import net.minecraftforge.fml.common.Optional;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import thaumcraft.api.internal.EnumWarpType;
 import thaumcraft.api.items.IRepairable;
 import thaumcraft.api.items.IWarpingGear;
+import thaumcraft.api.research.ResearchHelper;
+import thaumcraft.common.Thaumcraft;
 import vazkii.botania.api.item.ICosmeticAttachable;
 import vazkii.psi.common.core.handler.PlayerDataHandler;
 
@@ -96,6 +99,7 @@ public class ItemAmuletPsi extends Item implements IBauble, IRepairable, IWarpin
                 amulet.damageItem(absorbed, player);
                 if (amulet.getItemDamage() >= amulet.getMaxDamage()) {
                     BaublesApi.getBaubles(player).removeStackFromSlot(0);
+                    ResearchHelper.addWarpToPlayer(player, 1, EnumWarpType.NORMAL);
                 }
             }
         }

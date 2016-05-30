@@ -94,7 +94,7 @@ public class ItemAmuletPsi extends Item implements IBauble, IRepairable, IWarpin
             EntityPlayer player = (EntityPlayer)event.entityLiving;
             ItemStack amulet = BaublesApi.getBaubles(player).getStackInSlot(0);
             if(amulet != null && amulet.getItem() == ModItems.amuletMentalAgony) {
-                int absorbed = Math.min((int) event.ammount - 1, amulet.getMaxDamage() - amulet.getItemDamage());
+                int absorbed = Math.min((int) event.ammount - 2, amulet.getMaxDamage() - amulet.getItemDamage());
                 event.ammount -= absorbed;
                 amulet.damageItem(absorbed, player);
                 if (amulet.getItemDamage() >= amulet.getMaxDamage()) {

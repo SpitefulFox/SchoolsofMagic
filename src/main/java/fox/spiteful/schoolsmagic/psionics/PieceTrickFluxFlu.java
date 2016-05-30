@@ -1,18 +1,18 @@
 package fox.spiteful.schoolsmagic.psionics;
 
 import net.minecraft.potion.Potion;
-import thaumcraft.common.lib.potions.PotionInfectiousVisExhaust;
+import thaumcraft.api.potions.PotionVisExhaust;
 import vazkii.psi.api.spell.Spell;
 import vazkii.psi.common.spell.trick.potion.PieceTrickPotionBase;
 
-public class PieceTrickFluxPhage extends PieceTrickPotionBase {
+public class PieceTrickFluxFlu extends PieceTrickPotionBase {
 
-    public PieceTrickFluxPhage(Spell spell) {
+    public PieceTrickFluxFlu(Spell spell) {
         super(spell);
     }
 
     @Override
     public Potion getPotion() {
-        return PotionInfectiousVisExhaust.instance;
+        return PotionVisExhaust.instance;
     }
 }

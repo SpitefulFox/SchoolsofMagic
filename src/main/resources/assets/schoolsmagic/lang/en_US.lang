@@ -28,16 +28,20 @@ tc.research_category.MIXED=Apocrypha
 # Spell Pieces
 psi.spellpiece.trickDeathGaze=Trick: Death Gaze
 psi.spellpiece.trickDeathGaze.desc=Applies a Death Gaze effect
-psi.spellpiece.trickFluxPhage=Trick: Flux Phage
-psi.spellpiece.trickFluxPhage.desc=Applies a Flux Phage effect
+psi.spellpiece.trickFluxFlu=Trick: Flux Flu
+psi.spellpiece.trickFluxFlu.desc=Applies a Flux Flu effect
+psi.spellpiece.trickFluxTaint=Trick: Flux Taint
+psi.spellpiece.trickFluxTaint.desc=Applies a Flux Taint effect
 psi.spellpiece.trickWarpWard=Trick: Warp Ward
 psi.spellpiece.trickWarpWard.desc=Applies a Warp Ward effect
 psi.spellpiece.trickSiphonAura=Trick: Siphon Aura
 psi.spellpiece.trickSiphonAura.desc=Drains Vis from the aura to replenish Psi
+psi.spellpiece.trickMoveNode=Trick: Move Node
+psi.spellpiece.trickMoveNode.desc=Finds the closest node to the target location and moves it towards the position
 psi.piecegroup.thaumic=Thaumaturgy
 psi.piecegroup.thaumic.desc=With a bit of improvisation, your CAD appears to be capable of reproducing various phenomenon and effects normally associated with more archaic schools of magic such as Thaumaturgy.
 #
 # Research
 schools.research_name.AMULETPSI=Amulet of Mental Anguish
 schools.research_text.AMULETPSI=Better than your sister!
-schools.research_page.AMULETPSI.1=CADs are very versatile, but sometimes dangerous. A spellcaster who isn't careful can end up blowing their own brains out from overflowing Psionic Energy. However, you've discovered that Void Metal is uniquely attuned to your mental pain in such situations.<BR><BR>The Amulet of Mental Anguish will protect you from most psionic energy overflow at the cost of its durability. The protection isn't entirely perfect, so suffering multiple surges in quick succession can still kill you.<BR><BR>Protecting your mind with eldritch materials is a good idea, right?
+schools.research_page.AMULETPSI.1=CADs are very versatile, but sometimes dangerous. A spellcaster who isn't careful can end up blowing their own brains out from overflowing Psionic Energy. However, you've discovered that Void Metal is uniquely attuned to mental suffering.<BR><BR>The Amulet of Mental Anguish will protect you from most psionic energy overflow at the cost of its durability. The protection isn't entirely perfect, so suffering multiple surges in quick succession can still kill you.<BR><BR>Wrapping your mind in the void is a good idea, right?

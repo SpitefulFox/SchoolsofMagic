@@ -4,20 +4,14 @@ import fox.spiteful.schoolsmagic.Config;
 import fox.spiteful.schoolsmagic.Lumberjack;
 import fox.spiteful.schoolsmagic.Magic;
 import fox.spiteful.schoolsmagic.items.ModItems;
-import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.CraftingManager;
 import net.minecraftforge.oredict.ShapedOreRecipe;
 import org.apache.logging.log4j.Level;
-import thaumcraft.api.ThaumcraftApi;
-import thaumcraft.api.aspects.Aspect;
-import thaumcraft.api.aspects.AspectList;
-import thaumcraft.api.crafting.InfusionRecipe;
 import thaumcraft.api.items.ItemsTC;
 import vazkii.psi.api.PsiAPI;
-import vazkii.psi.api.spell.PieceGroup;
 
 public class Psionics {
 
@@ -34,11 +28,15 @@ public class Psionics {
                 try {
                     PsiAPI.registerSpellPieceAndTexture("trickWarpWard", PieceTrickWarpWard.class);
                     PsiAPI.registerSpellPieceAndTexture("trickDeathGaze", PieceTrickDeathGaze.class);
-                    PsiAPI.registerSpellPieceAndTexture("trickFluxPhage", PieceTrickFluxPhage.class);
+                    PsiAPI.registerSpellPieceAndTexture("trickFluxFlu", PieceTrickFluxFlu.class);
+                    PsiAPI.registerSpellPieceAndTexture("trickFluxTaint", PieceTrickFluxTaint.class);
+                    PsiAPI.registerSpellPieceAndTexture("trickMoveNode", PieceTrickMoveNode.class);
                     PsiAPI.setGroupRequirements("thaumic", 25, "eidosReversal");
-                    PsiAPI.addPieceToGroup(PieceTrickWarpWard.class, "thaumic", true);
+                    PsiAPI.addPieceToGroup(PieceTrickMoveNode.class, "thaumic", true);
+                    PsiAPI.addPieceToGroup(PieceTrickWarpWard.class, "thaumic", false);
                     PsiAPI.addPieceToGroup(PieceTrickDeathGaze.class, "thaumic", false);
-                    PsiAPI.addPieceToGroup(PieceTrickFluxPhage.class, "thaumic", false);
+                    PsiAPI.addPieceToGroup(PieceTrickFluxFlu.class, "thaumic", false);
+                    PsiAPI.addPieceToGroup(PieceTrickFluxTaint.class, "thaumic", false);
 
                     CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(ModItems.colorizer, 1, 0), " P ", "GSG", " I ",
                             'P', new ItemStack(psiResource, 1, 0),

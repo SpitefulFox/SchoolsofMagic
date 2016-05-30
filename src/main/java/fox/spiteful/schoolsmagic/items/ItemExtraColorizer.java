@@ -1,7 +1,6 @@
 package fox.spiteful.schoolsmagic.items;
 
 import fox.spiteful.schoolsmagic.Magic;
-import fox.spiteful.schoolsmagic.thaumaturgy.Thaumaturgy;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -40,14 +39,14 @@ public class ItemExtraColorizer extends Item implements ICADColorizer {
             float w = (float) (Math.sin(time * 0.1) * 0.5 + 0.5) * 0.5F;
             float r = 0.6F - w;
             float g = 0F;
-            float b = 0.6F - w;
+            float b = 0.75F - w;
             return new Color((int) (r * 255), (int) (g * 255), (int) (b * 255)).getRGB();
         }
         if(meta == 1){
             float time = ClientTickHandler.total;
-            float w = (float) (Math.sin(time * 0.3) * 0.5 + 0.5) * 0.3F;
+            float w = (float) (Math.sin(time * 0.1) * 0.5 + 0.5) * 0.3F;
             float r = 1F;
-            float g = 0.5F + w;
+            float g = Math.min(0.2F + w, 0.7F);
             float b = 0F;
             return new Color((int) (r * 255), (int) (g * 255), (int) (b * 255)).getRGB();
         }

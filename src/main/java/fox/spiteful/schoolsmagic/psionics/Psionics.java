@@ -43,11 +43,12 @@ public class Psionics {
                             'S', new ItemStack(ItemsTC.salisMundus), 'G', "blockGlass", 'I', new ItemStack(Items.iron_ingot)));
 
                 } catch (Throwable e) {
-                    Lumberjack.log(Level.INFO, e, "Schools of Magic was just a weed.");
+                    Lumberjack.log(Level.INFO, e, "Schools of Magic gained too much Warp.");
                 }
             }
         } catch (Throwable e) {
             Lumberjack.log(Level.INFO, e, "Schools of Magic was just a weed.");
+            Config.psi = false;
         }
     }
 

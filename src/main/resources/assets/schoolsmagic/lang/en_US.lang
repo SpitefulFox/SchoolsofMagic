@@ -2,6 +2,7 @@
 # Items
 item.cadColorizerThaumic.name=Thaumic CAD Colorizer
 item.cadColorizerFlame.name=Incendiary CAD Colorizer
+item.cadColorizerFairy.name=Fairy CAD Colorizer
 item.amuletMentalAgony.name=Amulet of Mental Anguish
 #
 # Wand components
@@ -40,7 +41,7 @@ psi.spellpiece.trickSiphonAura.desc=Drains Vis from the aura to replenish Psi
 psi.spellpiece.trickMoveNode=Trick: Move Node
 psi.spellpiece.trickMoveNode.desc=Finds the closest node to the target location and moves it towards the position
 psi.piecegroup.thaumic=Thaumaturgy
-psi.piecegroup.thaumic.desc=With a bit of improvisation, your CAD appears to be capable of reproducing and manipulating various phenomenon normally associated with more archaic schools of magic such as Thaumaturgy.<br><br>The red piece of this group, "Trick: Move Node", allows you to interact with the otherwise intangible aura nodes. The trick will find a node within 32 blocks of the Target vector and move it towards the Position vector. The Stability parameter determines how safe the node movement is. The higher the stability, the less likely the spell is to generate flux or angry wisps.
+psi.piecegroup.thaumic.desc=With a bit of improvisation, your CAD appears to be capable of reproducing and manipulating various phenomena normally associated with more archaic schools of magic such as Thaumaturgy.<br><br>The red piece of this group, "Trick: Move Node", allows you to interact with the otherwise intangible aura nodes. The trick will find a node within 32 blocks of the Target vector and move it towards the Position vector. The Stability parameter determines how safe the node movement is. The higher the stability, the less likely the spell is to generate flux or angry wisps.
 #
 # Research
 schools.research_name.AMULETPSI=Amulet of Mental Anguish

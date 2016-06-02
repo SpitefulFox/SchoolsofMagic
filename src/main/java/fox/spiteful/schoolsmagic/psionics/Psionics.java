@@ -46,6 +46,18 @@ public class Psionics {
                     Lumberjack.log(Level.INFO, e, "Schools of Magic gained too much Warp.");
                 }
             }
+            if(Config.botany) {
+                try {
+                    Item manaResource = Magic.getItem("botania", "manaResource");
+
+                    CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(ModItems.colorizer, 1, 2), " P ", "GSG", " I ",
+                            'P', new ItemStack(psiResource, 1, 0),
+                            'S', new ItemStack(manaResource, 1, 8), 'G', "blockGlass", 'I', new ItemStack(Items.iron_ingot)));
+
+                } catch (Throwable e) {
+                    Lumberjack.log(Level.INFO, e, "Schools of Magic decayed passively.");
+                }
+            }
         } catch (Throwable e) {
             Lumberjack.log(Level.INFO, e, "Schools of Magic was just a weed.");
             Config.psi = false;

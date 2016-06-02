@@ -1,5 +1,6 @@
 package fox.spiteful.schoolsmagic.items;
 
+import fox.spiteful.schoolsmagic.Config;
 import fox.spiteful.schoolsmagic.Magic;
 import fox.spiteful.schoolsmagic.thaumaturgy.Thaumaturgy;
 import net.minecraft.creativetab.CreativeTabs;
@@ -38,9 +39,10 @@ public class ItemWandCores extends Item {
         for (int x = 0; x < types.length; x++) {
             list.add(new ItemStack(this, 1, x));
         }
-        list.add(getWand(Thaumaturgy.WAND_ROD_AETERNALIS, WandCap.caps.get("thaumium")));
-        list.add(getWand(Thaumaturgy.WAND_ROD_LIVINGWOOD, WandCap.caps.get("thaumium")));
-        list.add(getWand(Thaumaturgy.WAND_ROD_DREAMWOOD, WandCap.caps.get("thaumium")));
+        if(Config.botany) {
+            list.add(getWand(Thaumaturgy.WAND_ROD_LIVINGWOOD, WandCap.caps.get("thaumium")));
+            list.add(getWand(Thaumaturgy.WAND_ROD_DREAMWOOD, WandCap.caps.get("thaumium")));
+        }
     }
 
     private ItemStack getWand(WandRod rod, WandCap cap){

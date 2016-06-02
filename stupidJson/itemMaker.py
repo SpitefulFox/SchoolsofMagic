@@ -1,7 +1,7 @@
 def main():
     print("Please enter filename:")
     filename = input()
-    f = open(filename + '.json', mode='xt')
+    f = open("../src/main/resources/assets/schoolsmagic/models/item/" + filename + '.json', mode='xt')
 
     f.write('{\n')
     f.write('  "parent": "schoolsmagic:item/base_item",\n')

@@ -36,12 +36,18 @@ public class ItemWandCores extends Item {
     @Override
     @SideOnly(Side.CLIENT)
     public void getSubItems(Item item, CreativeTabs par2CreativeTabs, List<ItemStack> list) {
-        for (int x = 0; x < types.length; x++) {
+        /*for (int x = 0; x < types.length; x++) {
             list.add(new ItemStack(this, 1, x));
-        }
+        }*/
         if(Config.botany) {
-            list.add(getWand(Thaumaturgy.WAND_ROD_LIVINGWOOD, WandCap.caps.get("thaumium")));
-            list.add(getWand(Thaumaturgy.WAND_ROD_DREAMWOOD, WandCap.caps.get("thaumium")));
+            list.add(new ItemStack(this, 1, 3));
+            list.add(new ItemStack(this, 1, 4));
+            list.add(new ItemStack(this, 1, 5));
+            list.add(new ItemStack(this, 1, 6));
+            list.add(new ItemStack(this, 1, 7));
+            list.add(getWand(Thaumaturgy.WAND_ROD_LIVINGWOOD, Thaumaturgy.WAND_CAP_MANASTEEL));
+            list.add(getWand(Thaumaturgy.WAND_ROD_DREAMWOOD, Thaumaturgy.WAND_CAP_ELEMENTIUM));
+            list.add(getWand(Thaumaturgy.STAFF_ROD_DREAMWOOD, Thaumaturgy.WAND_CAP_ELEMENTIUM));
         }
     }
 

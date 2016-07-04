@@ -7,6 +7,7 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 public class ModItems {
 
     public static Item cores;
+    public static Item caps;
     public static Item colorizer;
     public static Item amuletMentalAgony;
 
@@ -15,6 +16,8 @@ public class ModItems {
         if(Config.thaumaturgy) {
             cores = new ItemWandCores();
             GameRegistry.registerItem(cores, "WandCores");
+            caps = new ItemWandCaps();
+            GameRegistry.registerItem(caps, "WandCaps");
         }
 
         if(Config.psi){

@@ -11,6 +11,8 @@ item.Wand.dreamwood.rod=Dreamwood
 item.Wand.aeternalis.rod=Aeternalis
 item.Wand.manasteel.cap=Manasteel Entwined
 item.Wand.elementium.cap=Elementium Kissed
+item.Wand.ebony.cap=Ebony Adorned
+item.Wand.ivory.cap=Ivory Adorned
 item.school_wand.livingwood.name=Livingwood Rod
 item.school_wand.livingwood_inert.name=Dormant Livingwood Rod
 item.school_wand.witchwood_staff.name=Witchwood Staff Core
@@ -18,9 +20,20 @@ item.school_wand.dreamwood.name=Dreamwood Rod
 item.school_wand.dreamwood_inert.name=Silent Dreamwood Rod
 item.school_wand.dreamwood_staff.name=Dreamwood Staff Core
 item.school_wand.aeternalis.name=Aeternalis Rod
+item.school_wand_cap.manasteel.name=Manasteel Cap
+item.school_wand_cap.manasteel_inert.name=Inert Manasteel Cap
+item.school_wand_cap.elementium.name=Elementium Cap
+item.school_wand_cap.elementium_inert.name=Inert Elementium Cap
+item.school_wand_cap.ebony.name=Ebony Cap
+item.school_wand_cap.ivory.name=Ivory Cap
 #
 # Blocks
-
+schoolflower.euclidaisy.name=Euclidaisy
+tile.botania:flower.euclidaisy.name=Euclidaisy
+schoolflower.astralbloom.name=Astral Bloom
+tile.botania:flower.astralbloom.name=Astral Bloom
+schoolflower.mindlotus.name=Mind Lotus
+tile.botania:flower.mindlotus.name=Mind Lotus
 #
 # Misc
 itemGroup.schoolsmagic=Schools of Magic
@@ -36,14 +49,61 @@ psi.spellpiece.trickFluxTaint=Trick: Flux Taint
 psi.spellpiece.trickFluxTaint.desc=Applies a Flux Taint effect
 psi.spellpiece.trickWarpWard=Trick: Warp Ward
 psi.spellpiece.trickWarpWard.desc=Applies a Warp Ward effect
+psi.spellpiece.trickSoulCross=Trick: Soul Cross
+psi.spellpiece.trickSoulCross.desc=Applies a Soul Cross effect
+psi.spellpiece.trickAllure=Trick: Allure
+psi.spellpiece.trickAllure.desc=Applies an Allure effect
+psi.spellpiece.trickEmptiness=Trick: Emptiness
+psi.spellpiece.trickEmptiness.desc=Applies an Emptiness effect
 psi.spellpiece.trickSiphonAura=Trick: Siphon Aura
 psi.spellpiece.trickSiphonAura.desc=Drains Vis from the aura to replenish Psi
 psi.spellpiece.trickMoveNode=Trick: Move Node
 psi.spellpiece.trickMoveNode.desc=Finds the closest node to the target location and moves it towards the position
+psi.spellpiece.trickGenMana=Trick: Generate Mana
+psi.spellpiece.trickGenMana.desc=Causes a Mind Lotus at the target position to generate mana
 psi.piecegroup.thaumic=Thaumaturgy
 psi.piecegroup.thaumic.desc=With a bit of improvisation, your CAD appears to be capable of reproducing and manipulating various phenomena normally associated with more archaic schools of magic such as Thaumaturgy.<br><br>The red piece of this group, "Trick: Move Node", allows you to interact with the otherwise intangible aura nodes. The trick will find a node within 32 blocks of the Target vector and move it towards the Position vector. The Stability parameter determines how safe the node movement is. The higher the stability, the less likely the spell is to generate flux or angry wisps.
+psi.piecegroup.botany=Botany
+psi.piecegroup.botany.desc=With a bit of improvisation, your CAD appears to be capable of reproducing and manipulating various phenomena normally associated with more archaic schools of magic such as Botany.<br><br>The red piece of this group, "Trick: Generate Mana", allows you to generate mana at a targetted Mind Lotus flower. Higher Stability increases the cost of the spell, but lower Stability induces more stress in the flower, hastening its decay.
 #
 # Research
 schools.research_name.AMULETPSI=Amulet of Mental Anguish
 schools.research_text.AMULETPSI=Better than your sister!
 schools.research_page.AMULETPSI.1=CADs are very versatile, but sometimes dangerous. A spellcaster who isn't careful can end up blowing their own brains out from overflowing Psionic Energy. However, you've discovered that Void Metal is uniquely attuned to mental suffering.<BR><BR>The Amulet of Mental Anguish will protect you from most psionic energy overflow at the cost of its durability. The protection isn't entirely perfect, so suffering multiple surges in quick succession can still kill you.<BR><BR>Wrapping your mind in the void is a good idea, right?
+#
+schools.research_name.TAOCAPS=Ebony and Ivory Psimetal Caps
+schools.research_text.TAOCAPS=If Paul McCartney and Stevie Wonder were mages
+schools.research_page.TAOCAPS.1=Ebony and Ivory Psimetal have very useful magical properties outside of digital casting assistance. By fashioning them into wand caps, you're able to imbue your wands with greater efficiency or speed.<BR><BR>Ebony Caps have a slightly lower vis efficiency than Thaumium, but can draw vis from the aura much quicker.<BR><BR>Ivory Caps have a slightly higher vis efficiency than Thaumium, but do not enhance charging speed in any way.
+#
+schools.research_name.ROD_livingwood=Livingwood Wand Core
+schools.research_text.ROD_livingwood=Botanical vis storage
+schools.research_page.ROD_livingwood.1=Livingwood has the fantastic ability to manipulate mana. When combined with the right reagents, it can even convert mana into vis.<BR><BR>The Livingwood Wand will quickly draw mana from storage items in your inventory in order to charge itself.<BR><BR>The infusion process burns the livingwood out, unfortunately. Once infused, the wand rod must be charged in a mana pool in order to be re-awakened.
+#
+schools.research_name.CAP_manasteel=Manasteel Caps
+schools.research_text.CAP_manasteel=The secret of mana
+schools.research_page.CAP_manasteel.1=Manasteel has very useful properties when it comes to mana manipulation. When crafted into a wand cap, it offers a 90% vis rate. If combined with a wand that can consume mana, it also makes the mana conversion process more efficient.<BR><BR>In order to be used in the creation of a wand, the Inert Manasteel Caps must be infused in a Mana Pool.
+#
+schools.research_name.CAP_elementium=Elementium Caps
+schools.research_text.CAP_elementium=Eco Friendly Wand Caps
+schools.research_page.CAP_elementium.1=Alfheim seems to be a world steeped in magical power, and Elementium is no exception. When crafted into a wand cap and treated with the right materials, Elementium Caps have an exceptional ability to channel vis. When combined with a wand or staff that uses mana, they'll also reduce the mana conversion rate.<BR><BR>Elementium's pretty pink color is just icing on the cake.
+#
+schools.research_name.ROD_dreamwood_staff=Dreamwood Staff
+schools.research_text.ROD_dreamwood_staff=Sweet dreams are made of these
+schools.research_page.ROD_dreamwood_staff.1=Livingwood is a useful material, but it can't seem to withstand the amount of arcane power needed to make a staff. The elves' dreamwood seems to be up to task, however.<BR><BR>Staves made of dreamwood hold significantly more vis than the equivalent wand and are able to apply more potent power when using foci.<BR><BR>As with livingwood, dreamwood rods must be infused in a mana pool to fully awaken.
+#
+schools.research_name.EUCLIDAISY=Euclidaisy
+schools.research_text.EUCLIDAISY=Wisp Farming
+schools.research_page.EUCLIDAISY.1=Wispy Essences are an extremely useful sources of rare Auram essentia. It's said that in a forgotten age, Thaumaturges could physically rip such essences out of nodes, but no amount of force available to the modern mage seems capable of such destruction. The only source of essences is Wisps, which aren't exactly common.<BR><BR>By combining thaumaturgy and hedge magic, you've created a flower that can use mana to rip open the fabric of reality. The rip isn't stable enough to form a node, but it does stay open long enough to drop a single wispy strand of essence. Applying a redstone signal to the flower causes it to stop.
+#
+schools.research_name.ASTRALBLOOM=Astral Bloom
+schools.research_text.ASTRALBLOOM=Helping the environment!
+schools.research_page.ASTRALBLOOM.1=Any ecologically minded Thaumaturge knows that pollution is bad for the aura, but what are you supposed to do about it? NOT practice thaumaturgy?<BR><BR>Instead, you've created a special flower that can filter flux out of the local aura. By specially treating a shimmerleaf with botanical materials, you create a flower capable of treating metaphysical taint instead of physical.<BR><BR>The process is slow and requires excessive amounts of mana, but you can stop the flower with a redstone signal.
+#
+# Lexicon
+schools.lexicon.euclidaisy=Euclidaisy
+schools.lexicon.euclidaisy.0=The eerie, pink &1Euclidaisy&0 is an oddity. It uses large amounts of mana to conjure some sort of wispy substance that only seems useful to thaumaturges.<br>&oIt doesn't combustion bend.&r
+schools.lexicon.astralbloom=Astral Bloom
+schools.lexicon.astralbloom.0=The strange &1Astral Blooms&0 seem to devour exhorbitant amounts of mana to do nothing at all.<br>Thaumaturges insist that the flowers purify harmful taint from an invisible aura that only they can see. What will those charlatans do next? Try and sell you magical crystals?
+schools.lexicon.mindlotus=Mind Lotus
+schools.lexicon.mindlotus.0=The &1Mind Lotus&0 causes mental unease just by being nearby, as if it were prying into your mind.<br>In spite of this, it doesn't seem to generate any mana on its own. Maybe it needs some sort of push?<br>The flower seems oddly frail, decaying even in situations where other flowers would survive.
+schools.lexicon.mindlotus.1=Don't eat it!

@@ -48,11 +48,21 @@ public class Psionics {
             }
             if(Config.botany) {
                 try {
-                    Item manaResource = Magic.getItem("botania", "manaResource");
+                    /*Item manaResource = Magic.getItem("botania", "manaResource");
 
                     CraftingManager.getInstance().getRecipeList().add(new ShapedOreRecipe(new ItemStack(ModItems.colorizer, 1, 2), " P ", "GSG", " I ",
                             'P', new ItemStack(psiResource, 1, 0),
-                            'S', new ItemStack(manaResource, 1, 8), 'G', "blockGlass", 'I', new ItemStack(Items.iron_ingot)));
+                            'S', new ItemStack(manaResource, 1, 8), 'G', "blockGlass", 'I', new ItemStack(Items.iron_ingot)));*/
+
+                    PsiAPI.registerSpellPieceAndTexture("trickGenMana", PieceTrickGenMana.class);
+                    PsiAPI.registerSpellPieceAndTexture("trickSoulCross", PieceTrickSoulCross.class);
+                    PsiAPI.registerSpellPieceAndTexture("trickAllure", PieceTrickAllure.class);
+                    PsiAPI.registerSpellPieceAndTexture("trickEmptiness", PieceTrickEmptiness.class);
+                    PsiAPI.setGroupRequirements("botany", 25, "eidosReversal");
+                    PsiAPI.addPieceToGroup(PieceTrickGenMana.class, "botany", true);
+                    PsiAPI.addPieceToGroup(PieceTrickSoulCross.class, "botany", false);
+                    PsiAPI.addPieceToGroup(PieceTrickAllure.class, "botany", false);
+                    PsiAPI.addPieceToGroup(PieceTrickEmptiness.class, "botany", false);
 
                 } catch (Throwable e) {
                     Lumberjack.log(Level.INFO, e, "Schools of Magic decayed passively.");

@@ -6,15 +6,15 @@ import vazkii.psi.api.spell.Spell;
 import vazkii.psi.api.spell.SpellCompilationException;
 import vazkii.psi.common.spell.trick.potion.PieceTrickPotionBase;
 
-public class PieceTrickSoulCross extends PieceTrickPotionBase {
+public class PieceTrickEmptiness extends PieceTrickPotionBase {
 
-    public PieceTrickSoulCross(Spell spell) {
+    public PieceTrickEmptiness(Spell spell) {
         super(spell);
     }
 
     @Override
     public Potion getPotion() {
-        return ModPotions.soulCross;
+        return ModPotions.emptiness;
     }
 
     @Override

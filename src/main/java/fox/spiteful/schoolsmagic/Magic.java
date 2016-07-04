@@ -1,5 +1,6 @@
 package fox.spiteful.schoolsmagic;
 
+import fox.spiteful.schoolsmagic.botany.Botany;
 import fox.spiteful.schoolsmagic.items.ModItems;
 import fox.spiteful.schoolsmagic.psionics.Psionics;
 import fox.spiteful.schoolsmagic.thaumaturgy.Thaumaturgy;
@@ -47,6 +48,8 @@ public class Magic {
             Thaumaturgy.miracles();
         if(Config.psi)
             Psionics.oneechan();
+        if(Config.botany)
+            Botany.hippyFlowerPower();
 
         proxy.stupidJsonBullshit();
     }
@@ -54,7 +57,8 @@ public class Magic {
     @Mod.EventHandler
     public void book(FMLInitializationEvent event)
     {
-
+        if(Config.botany)
+            Botany.lexify();
     }
 
     @Mod.EventHandler
